@@ -67,5 +67,5 @@ for i in range(len(dropout_status)):
 
 		# set data in dictionary
 		data = {'train': train, 'valid': valid, 'test': test}
-		fit.train_minibatch(sess, nntrainer, data, batch_size=100, num_epochs=100, 
+		fit.train_minibatch(sess, nntrainer, data, batch_size=100, num_epochs=1, 
 							patience=20, verbose=2, shuffle=True, save_all=False)	

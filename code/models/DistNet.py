@@ -11,7 +11,7 @@ def model(input_shape, dropout=True, l2=True, batch_norm=True):
                 'activation': 'relu',
                 }
     if dropout:
-        layer2['dropout']: 0.2,
+        layer2['dropout'] = 0.2
     if batch_norm:
         layer2['norm'] = 'batch'
     layer3 = {  'layer': 'conv1d',
@@ -22,7 +22,7 @@ def model(input_shape, dropout=True, l2=True, batch_norm=True):
                 'max_pool': 3,  # 65
                 }
     if dropout:
-        layer3['dropout']: 0.2,
+        layer3['dropout'] = 0.2
     if batch_norm:
         layer3['norm'] = 'batch'
 
@@ -34,7 +34,7 @@ def model(input_shape, dropout=True, l2=True, batch_norm=True):
                 'max_pool': 4, # 15
                 }
     if dropout:
-        layer4['dropout']: 0.3,
+        layer4['dropout'] = 0.3
     if batch_norm:
         layer4['norm'] = 'batch'
 
@@ -46,7 +46,7 @@ def model(input_shape, dropout=True, l2=True, batch_norm=True):
                 'max_pool': 3, # 3
                 }
     if dropout:
-        layer5['dropout']: 0.4,
+        layer5['dropout'] = 0.4
     if batch_norm:
         layer5['norm'] = 'batch'
 
@@ -57,7 +57,7 @@ def model(input_shape, dropout=True, l2=True, batch_norm=True):
             'activation': 'relu',
             }
     if dropout:
-        layer6['dropout']: 0.5,
+        layer6['dropout'] = 0.5
     if batch_norm:
         layer6['norm'] = 'batch'
 

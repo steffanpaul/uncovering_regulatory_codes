@@ -18,7 +18,7 @@ def model(input_shape, dropout=True, l2=True, batch_norm=True):
                 'activation': 'relu',
                 }
     if dropout:
-        layer3['dropout']: 0.5,
+        layer3['dropout'] = 0.5
     if batch_norm:
         layer3['norm'] = 'batch'
     layer4 = {  'layer': 'dense',

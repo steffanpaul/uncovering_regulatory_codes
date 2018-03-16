@@ -12,7 +12,7 @@ def model(input_shape, dropout=True, l2=True, batch_norm=True):
                 'max_pool': 50, 
                 }
     if dropout:
-        layer2['dropout']: 0.2,
+        layer2['dropout'] = 0.2
     if batch_norm:
         layer2['norm'] = 'batch'
     layer3 = {  'layer': 'conv1d',
@@ -22,7 +22,7 @@ def model(input_shape, dropout=True, l2=True, batch_norm=True):
                 'activation': 'relu',
                 }
     if dropout:
-        layer3['dropout']: 0.5,
+        layer3['dropout'] = 0.5
     if batch_norm:
         layer3['norm'] = 'batch'
     layer4 = {  'layer': 'dense',

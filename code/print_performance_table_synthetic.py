@@ -72,17 +72,6 @@ with open(save_path, 'wb') as f:
 			# set the best parameters
 			nntrainer.set_best_parameters(sess)
 
-			# count number of trainable parameters
-			all_params = sess.run(nntrainer.nnmodel.get_trainable_parameters())
-			num_params = 0
-			for params in all_params:
-				if isinstance(params, list):
-					for param in params:
-						num_params += np.prod(param.shape)
-				else:
-					num_params += np.prod(params.shape)
-			num_params_all.append(num_params)
-
 			# get performance metrics
 			predictions = nntrainer.get_activations(sess, test, 'output')
 			roc, roc_curves = metrics.roc(test['targets'], predictions)

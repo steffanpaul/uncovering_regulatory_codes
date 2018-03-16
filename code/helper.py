@@ -71,9 +71,9 @@ def load_model(model_name, input_shape, output_shape,
 
 	# load model specs
 	model_layers, optimization = genome_model.model(input_shape,
-													dropout,
-													l2,
-													batch_norm)
+													dropout_status,
+													l2_status,
+													bn_status)
 
 	return model_layers, optimization, genome_model
 
