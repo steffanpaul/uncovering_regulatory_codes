@@ -1,2 +1,2 @@
-model_checkpoint_path: "ShallowNet_l2_bn_epoch=75.ckpt"
-all_model_checkpoint_paths: "ShallowNet_l2_bn_epoch=75.ckpt"
+model_checkpoint_path: "LocalNet_l2_bn_best.ckpt"
+all_model_checkpoint_paths: "LocalNet_l2_bn_best.ckpt"

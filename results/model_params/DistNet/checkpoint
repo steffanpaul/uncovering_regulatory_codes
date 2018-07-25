@@ -1,2 +1,2 @@
-model_checkpoint_path: "DeepNet_best.ckpt"
-all_model_checkpoint_paths: "DeepNet_best.ckpt"
+model_checkpoint_path: "DistNet_l2_bn_best.ckpt"
+all_model_checkpoint_paths: "DistNet_l2_bn_best.ckpt"
