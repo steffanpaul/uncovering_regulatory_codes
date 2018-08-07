@@ -1,2 +1,2 @@
-model_checkpoint_path: "LocalNet_l2_bn_best.ckpt"
-all_model_checkpoint_paths: "LocalNet_l2_bn_best.ckpt"
+model_checkpoint_path: "LocalNet_do_l2_bnseed247_best.ckpt"
+all_model_checkpoint_paths: "LocalNet_do_l2_bnseed247_best.ckpt"

@@ -11,10 +11,10 @@ from deepomics import utils, fit
 
 #------------------------------------------------------------------------------------------------
 
-all_models = ['DistNet', 'LocalNet', 'DeepBind', 'StandardNet']
-dropout_status = [True, True, 	False, 	False, 	False, True,  True,  False]
-l2_status = 	 [True, False, 	True, 	False, 	False, True,  False, True]
-bn_status = 	 [True, False, 	False, 	True, 	False, False, True,  True]
+all_models = ['DistNet', 'LocalNet']#, 'DeepBind', 'StandardNet']
+dropout_status = [True]#, True, 	False, 	False, 	False, True,  True,  False]
+l2_status = 	 [True]#, False, 	True, 	False, 	False, True,  False, True]
+bn_status = 	 [True]#, False, 	False, 	True, 	False, False, True,  True]
 
 # save path
 results_path = '../results'
@@ -67,5 +67,5 @@ for i in range(len(dropout_status)):
 
 		# set data in dictionary
 		data = {'train': train, 'valid': valid, 'test': test}
-		fit.train_minibatch(sess, nntrainer, data, batch_size=100, num_epochs=1, 
-							patience=20, verbose=2, shuffle=True, save_all=False)	
+		fit.train_minibatch(sess, nntrainer, data, batch_size=100, num_epochs=100, 
+							patience=100, verbose=2, shuffle=True, save_all=False)	
