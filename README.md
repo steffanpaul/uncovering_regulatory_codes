@@ -21,7 +21,7 @@ Motivation: see if First Order Mutagenesis (FoM) can produce better visuals than
   * This has been quite tedious and after this, I don't think FoM is a viable alternative to guided backprop.
   
 * Expressivity
-  * This has not been started. However, the last layers for any sequence have tended to all give basically the same visual. So using code from the Mining files in the Layers folder, it could be 
+  * This has not been started. However, the last layers for any sequence have tended to all give basically the same saliency. So using code from the Mining files in the Layers folder, it could be 
   quite easy to loop over sequences and visualize FoM of just a few last layers for both DistNet and LocalNet.
   
   
